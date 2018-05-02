@@ -16,7 +16,7 @@
 
     <!--Read Main external CSS file-->
     <link href='style/main.css' rel='stylesheet'>
-    <style>
+    <style name='internal css'>
         .connect-links .ion-social-github {
             font-size: 30px;
             color: #333;
@@ -35,65 +35,80 @@
             font-size: 30px;
             color: #1DA1F2;
         }
+        
+        a:hover {
+            text-underline-position: unset;
+        }
     </style>
 </head>
 
 <body>
     <div class='container'>
-        <div class='row'>
-            <div class='col-xs-12 col-md-12'>
-                <header>
-                    <div>
-                        <h1>Vidvat's Stack!</h1>
-                    </div>
-                    <div name='navigation-bar' class='text-center'>
+
+        <header>
+            <div class='row card bg-information'>
+                <div class='col-xs-12 col-md-12 card-header'>
+                    <nav class='card-title navbar'>
+                        <a href='/' class='navbar-brand h1'>Vidvat's Stack!</a>
+                    </nav>
+                    <div name='navigation-bar' class='text-white'>
                         <nav name='header-navigation'>
-                            <ul class='list-inline'>
-                                <li class='list-inline-item' name='home page'>Home</li>
-                                <li class='list-inline-item' name='resources page'>Resources</li>
-                                <li class='list-inline-item' name='about me'>About Me</li>
+                            <ul class='nav justify-content-end'>
+                                <li class='nav-item card-link' name='Home page'><a href='#' class='nav-link'>Home</a></li>
+                                <li class='nav-item card-link ' name='resources page'><a href='#' class='nav-link'>Resources</a></li>
+                                <li class='nav-item card-link ' name='about me'><a href='#' class='nav-link'><span class='caret'>About me</span></a></li>
                             </ul>
                         </nav>
                     </div>
-                </header>
+                </div>
             </div>
-        </div>
-        <section>
-            <div class='row col-xs-12 col-md-12'>
-                <table name='aboutme'>
-                    <tr>
-                        <td></td>
-                        <td>
-                            </span>
-                            <h4> About me &amp; What do I Pursue</h4>
-                            </span>
-                        </td>
+        </header>
 
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><span class='lead'>
+    </div>
+    <div class='container'>
+        <section>
+            <div class='row card'>
+                <div class='col-xs-12 col-md-12 '>
+                    <table name='about me'>
+                        <tr>
+                            <td></td>
+                            <td>
+                                </span>
+                                <h4> About me &amp; What do I Pursue</h4>
+                                </span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span class='lead'>
                     I am a deiligent person, with the particular in Analystics. My passion lies in Data science.
                     my passion started with initial curiouzity of how does a regression equaltion can explain a weather pattern or height of offspring based on height of parents and their traits..
                     though this might simple or very trivial but my thinking towards reasoning started on those steps..
                 </span></td>
-                    </tr>
-                </table>
-                <table>
-                    <th>my motto:</th>
-                    <tr>
+                        </tr>
+                    </table>
+                    <table>
+                        <th>my motto:</th>
+                        <tr>
 
-                        <td>to learn something more, to have little more knowledge than i had yesterday.. </td>
-                    </tr>
-                </table>
-            </div>
-            <div class='row'>
-                <div class='col-md-10 col-md-1 hidden-img'>
-                    <img src='img/under_the_tree_black_and_white-wallpaper-1024x768.jpg' alt='logo' />
+                            <td>to learn something more, to have little more knowledge than i had yesterday.. </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            <div class='row'>
-                <div class='col-md-6'>
+            <div class='row card bg-dark'>
+                <div class='col-md-10 col-md-offset-1 hidden-img'>
+                    <img class='card-img' src='img/under_the_tree_black_and_white-wallpaper-1024x768.jpg' alt='logo' />
+                    <div class='card-img-overlay text-white'>
+                        <h5 class='card-title'>Whats there to See :p</h5>
+                        <h6 class='card-text'>marching towards a better day!, a better life!</h6>
+
+                    </div>
+                </div>
+            </div>
+            <div class='row '>
+                <div class='col-md-6 card border-primary'>
                     <table name='technical-skillset'>
                         <th><span>Technical Skillset</span></th>
                         <tr>
@@ -166,7 +181,7 @@
                         <tr>
                             <td></td>
                             <td>
-                                <p>Javascript: Iconic Framework, Electron Framework,React framework</p>
+                                <p>Javascript: Ionic Framework, Electron Framework,React framework</p>
                                 <p></p>Python Machine learning Framework: Tensorflow, Theano, Kears</p>
                                 <p> Python Web framework: Django</p>
                             </td>
@@ -183,90 +198,97 @@
                         </tr>
                     </table>
                 </div>
-                <div class='col-md-6'>
+                <div class='col-md-6 card border-warning'>
 
                     <table name='graduation-education'>
                         <th><span>Education</span></th>
-                        <tr>
-                            <td>Education Qualifications</td>
-                        </tr>
-                        <tr><span><td>Degree: Bachelor's degree (B.tech)
-                </td>
-            </span>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span>Institue:</span><span>
+                        <ul name='b.tech-Qualificaitons'>
+
+                            <tr>
+                                <td><dt>Degree:<dd>   Bachelor's degree (B.tech)</dd>
+                </dt>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+                                <td> <dt>
+                                Institue:
+                                <dd>
                 Vellore Institue of Technology    
-                </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><span>Branch:</span><span>
-                        Information Technology    
-                        </span></td>
-                        </tr>
-                        <tr>
-                            <td><span>Percentage:</span><span>
+                                </dd>
+                            </dt>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <dt>Branch:
+                                <dd>
+                                    Information Technology
+                                </dd>
+                                </dt>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td><dt>Percentage:<dd>
                                 8.2/10    
-                                </span></td>
+                                </dd></dt></td>
+                            </tr>
+                        </ul>
+                        <tr>
+                            <td><dt>Degree:<dd>High School Degree</dd>
+                        </dt></td>
                         </tr>
                         <tr>
-                            <td class='divide'></td>
-                        </tr>
-                        <tr>
-                            <td><span>Degree:</span><span>
-                            High School Degree    
-                            </span></td>
-                        </tr>
-                        <tr>
-                            <td><span>Institute:</span><span>
+                            <td><dt>Institute:<dd>
                             Sri Chaitanya Junior College    
-                                </span></td>
+                                </dd></dt></td>
                         </tr>
                         <tr>
-                            <td><span>Stream:</span><span>
-                                MPC(maths physics chemistry)| Andhra Pradesh state Board
-                                    </span></td>
+                            <td><dt>Stream:<dd>
+                                MPC  (maths physics chemistry)| Andhra Pradesh state Board
+                            </dd></dt></td>
                         </tr>
                         <tr>
-                            <td><span>Percentage:</span><span>
+                            <td><dt>Percentage:<dd>
                                     9.33  /10  
-                                    </span></td>
+                                    </dd></dt></td>
                         </tr>
                         <tr>
-                            <td><span>Degree:</span><span>
+                            <td><dt>Degree:<dd>
                              Tenth School    
-                                </span></td>
+                                </dd></dt></td>
                         </tr>
                         <tr>
-                            <td><span>Institue:</span><span>
+                            <td><dt>Institue:<dd>
                                     KCP Siddharth Adarsh Residential Public School    
-                                    </span></td>
+                            </dd></dt></td>
                         </tr>
                         <tr>
-                            <td><span>Stream</span><span>
+                            <td><dt>Stream<dd>
                                         CBSE    
-                                        </span></td>
+                            </dd></dt></td>
                         </tr>
                         <tr>
-                            <td><span>Percentage:</span><span>
+                            <td><dt>Percentage:<dd>
                                             9.2/10    
-                                            </span></td>
+                            </dd></dt></td>
                         </tr>
 
                     </table>
                 </div>
             </div>
-            <div class='row'>
+            <div class='row card'>
                 <h3 class='text-justify'>Resume!</h3>
             </div>
-            <div class='row text-center'>
-                <div class='col-md-4'>
-
-
-                    <table name='Certification'>
-                        <i class='ion-android-favorite'></i>
+            <div class='row text-center card-group'>
+                <div class='col-md-4 card'>
+                    <table name=' Certification '>
+                        <i class='ion-android-favorite '></i>
                         <th>Certifications</th>
                         <tr>
                             <td><span>Course : Practical Machine Learning</span></td>
@@ -280,13 +302,13 @@
                         </tr>
                         <tr>
                             <td><span>
-                                    <a href='https://www.coursera.org/account/accomplishments/verify/98X2DNTGJR5W'>Certification URL</a>
+                                    <a href='https://www.coursera.org/account/accomplishments/verify/98X2DNTGJR5W '>Certification URL</a>
                             </span>
                             </td>
                         </tr>
                     </table>
                 </div>
-                <div class='col-md-4'>
+                <div class='col-md-4 card '>
                     <table>
                         <th>Certifications</th>
                         <tr>
@@ -301,13 +323,13 @@
                         </tr>
                         <tr>
                             <td><span>
-                                    <a href='https://www.coursera.org/account/accomplishments/verify/GZENK6VK2S2P'>Certification URL</a>
+                                    <a href='https://www.coursera.org/account/accomplishments/verify/GZENK6VK2S2P '>Certification URL</a>
                             </span>
                             </td>
                         </tr>
                     </table>
                 </div>
-                <div class='col-md-4'>
+                <div class='col-md-4 card '>
                     <table>
                         <th>Certifications</th>
                         <tr>
@@ -321,17 +343,17 @@
                         UDW3K2CH73JB</span></td>
                         </tr>
                         <tr>
-                            <td><span><a href='https://www.coursera.org/account/accomplishments/verify/UDW3K2CH73JB'>Certification URL</a>
+                            <td><span><a href='https://www.coursera.org/account/accomplishments/verify/UDW3K2CH73JB '>Certification URL</a>
                         </span>
                             </td>
                         </tr>
                     </table>
                 </div>
             </div>
-            <div class='row'>
-                <div class='col-md-6 text-left'>
-                    <table name='work-experience'>
-                        <span class='text-justify'>
+            <div class='row '>
+                <div class='col-md-6 card text-left '>
+                    <table name='work-experience '>
+                        <span class='text-justify '>
                             Work Experience:
                         </span>
                         <tr>
@@ -339,7 +361,7 @@
                             </td>
                             <td>
                                 Marketing Analyst Qrius
-                                <div name='work-specifics' class=''>
+                                <div name='work-specifics ' class=' '>
                                     <ul>
                                         <li>Peer to Peer Marketing Assignment</li>
                                         <li> Demographic based Association Analysis of potential clients</li>
@@ -349,39 +371,39 @@
                         </tr>
                     </table>
                 </div>
-                <div class='col-md-6'>
+                <div class='col-md-6 card '>
                     <p>
-                        <div name='links-attachment' class='connect-links'>
-                            <table name='social-technical-network'>
-                                <tr name='github'>
+                        <div name='links-attachment ' class='connect-links '>
+                            <table name='social-technical-network '>
+                                <tr name='github '>
                                     <td>
                                     </td>
                                     <td>
-                                        <i class='ion-social-github'></i>
-                                        <span id='github-link-attachment' class='text-center'><a href='https:/www.github.com/vidvat119'>Github Profile</a></span>
-                                        <div name='github-profile-desc'>
+                                        <i class='ion-social-github '></i>
+                                        <span id='github-link-attachment ' class='text-center '><a href='https:/www.github.com/vidvat119 '>Github Profile</a></span>
+                                        <div name='github-profile-desc '>
                                             <p>For information about projects and other works which i have been doing past last, you can go to my github profile.
                                             </p>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr name='linkedin'>
+                                <tr name='linkedin '>
                                     <td>
                                     </td>
-                                    <td><i class='ion-social-linkedin'></i>
-                                        <span id='linkedin-link-attachment'><a href='https:/www.linkedin.com/in/anand-vidvat-arza'>LinkedIn Profile</a></span>
-                                        <div name='linkedin-profile-desc'>
+                                    <td><i class='ion-social-linkedin '></i>
+                                        <span id='linkedin-link-attachment '><a href='https:/www.linkedin.com/in/anand-vidvat-arza '>LinkedIn Profile</a></span>
+                                        <div name='linkedin-profile-desc '>
                                             <p>For information about my professional life, you can go to my LinkedIn Profile.
                                             </p>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr name='twitter'>
+                                <tr name='twitter '>
                                     <td>
                                     </td>
-                                    <td><i class='ion-social-twitter'></i>
-                                        <span id='twitter-link-attachment'><a href='https://twitter.com/anandvidvat'>Twitter Profile</a></span>
-                                        <div name='twitter-profile-desc'>
+                                    <td><i class='ion-social-twitter '></i>
+                                        <span id='twitter-link-attachment '><a href='https://twitter.com/anandvidvat '>Twitter Profile</a></span>
+                                        <div name='twitter-profile-desc '>
                                             <p>For information about my views and trending activities, you can go to my Twitter Profile.
                                             </p>
                                         </div>
@@ -393,40 +415,42 @@
                 </div>
             </div>
         </section>
-        <div class='row'>
-            <footer>
-                <div class='col-md-6'>
-                    <div>
-                        <p>
-                            <table name='footer'>
-                                <tr>
-                                    <td>this website is build to make my self a online live hosted Resume and a testement of my work experience..</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class='lead'> Anand Vidvat Arza</td>
-                                </tr>
-                            </table>
-                        </p>
-                    </div>
-                </div>
-                <div class='col-md-4'>
-                    <div name='navigation-bar'>
-                        <nav name='footer-navigation'>
-                            <span class='lead'>Links</span>
-                            <ul class='list-unstyled'>
-                                <li class='list-unstyled-item' name='Home page'>Home</li>
-                                <li class='list-unstyled-item' name='Resources page'>Resources</li>
-                                <li class='list-unstyled-item' name='About me'>About Me</li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </footer>
-        </div>
     </div>
-    <script src='scripts/node_modules/jquery/dist/jquery.min.js'></script>
-    <script src='scripts/js/bootstrap.js'></script>
+    <div class='container'>
+        <footer>
+            <div class='row  card-group bg-success'>
+                <div class='col-md-5  card '>
+                    <table name='footer '>
+                        <tr>
+                            <td>this website is build to make my self a online live hosted Resume and a testement of my work experience..</td>
+
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class='lead '> Anand Vidvat Arza</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--
+                    <div class='col-md-3 card'>
+                    <nav name='footer-navigation '>
+                        <span class='lead '>Links</span>
+                        <ul class='list-unstyled '>
+                            <li class='list-unstyled-item ' name='Home page '>Home</li>
+                            <li class='list-unstyled-item ' name='Resources page '>Resources</li>
+                            <li class='list-unstyled-item ' name='About me '>About Me</li>
+                        </ul>
+                    </nav>
+                </div>
+            -->
+            </div>
+        </footer>
+    </div>
+    <script src='scripts/node_modules/jquery/dist/jquery.min.js '></script>
+    <script src='scripts/js/bootstrap.js '></script>
 </body>
 
 </html>
