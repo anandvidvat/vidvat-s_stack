@@ -14,7 +14,8 @@ handlers:
   -url: /style
   static_dir: static/style
   -url: /.*
-  script: routes.py
+  secure: always
+  script: app.py
 
 libraries:
   -name: ssl
