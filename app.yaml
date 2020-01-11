@@ -16,7 +16,5 @@ handlers:
     secure: always
     script: app.py
 
-libraries:
-  - name: ssl
-    version: latest
+
 
