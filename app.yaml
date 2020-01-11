@@ -1,7 +1,6 @@
-runtime: python36
+runtime: python37
 version: 1
-api_version: 1
-threadsafe: true
+
 
 
 handlers:
