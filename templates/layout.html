@@ -9,7 +9,8 @@
     <meta name="author" content="Anand Vidvat Arza">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title of page-->
-    <title>Vidvat's stack</title>
+    {% block title %} 
+    {% endblock title%}
     <!--favicon -->
     <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='img/av.ico')}}"  />
     <!-- Read Bootstrap-->
@@ -71,12 +72,11 @@
 </head>
 
 <body>
-    <div class='container'>
-        <header>
-            <div class='row card bg-img-gradient text-white'>
-                <div class='col-xs-12 col-md-12 card-header'>
+    <div class = 'bg-dark'>
+        <header class='navbar-dark fixed-top'>
+            <div class='row card'>
                     <nav class='card-title navbar'>
-                        <a href='/' class='navbar-brand h1'>Vidvat's Stack!</a>
+                        <a href='/' class='navbar-brand h1 text-'>Vidvat's Stack!</a>
                     </nav>
                     <div name='navigation-bar' class='text-ligth'>
                         <nav name='header-navigation'>
@@ -89,13 +89,11 @@
                             </div>
                         </nav>
                     </div>
-                </div>
             </div>
         </header>
+
     </div>
-    {%  block content %}
-    
-    {% endblock %}
+    {%  block content %}    {% endblock content %}
     <div class='container'>
         <footer>
             <div class='row  card-group bg-success'>
@@ -130,4 +128,4 @@
     <script src="{{url_for('static', filename='scripts/node_modules/jquery/dist/jquery.min.js')}}"></script>
     <script src="{{url_for('static', filename='scripts/js/bootstrap.js')}}"></script>
 </body>
-</html
+</html>
